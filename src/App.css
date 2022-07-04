@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.task{
+  
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  background-color: white;
+  color: rgba(255, 255, 255, 0.774);
+  width: 50%;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: red -2px 0, cyan 2px 0;
+  border: solid;
+  border-image-slice: 2;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg,#41486B, #D8B696 );
+  border-radius: 15px;
+  box-shadow: inset 90px 55px 100px -5px rgb(10, 10, 230),
+                    10px 2px 40px 3px rgb(82, 82, 240);
+}
+.background-to-do {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin-top: -67px;
+  margin-bottom: -16px;
+  background-image: url(photo.jpg);
+}
+
+.to-do-list h1 ,p{
+  font-size: 100px;
+  font-family: 'Pacifico';
+  color: white;
+  animation: neon 5s infinite;
+  font-style: italic;
+}
+.to-do-list h2{
+  font-style: italic;
+  font-size: 30px;
+}
+@keyframes neon{
+  0% , 39% , 41% , 59% , 61% , 100%{
+    text-shadow: 
+    white 0 0 150px,
+    #86DADA 0 0 24px,
+    #0B1947 0 0 36px,
+    #eb1515 0 0 100px;
+  }
+  40%, 60%{
+    text-shadow: none;
+  }
+}
+
+.to-do-list p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.to-do-list ul li {
+  font-size: 50px;
+  list-style: none;
+}
+.to-do-list input[type=checkbox]{
+  height: 40px;
+  width: 80px;
+  
+}
+
+.to-do-list input[type=text] {  
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.to-do-list input[type=text]:focus {
+  width: 250px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+.to-do-list button{
+  min-width: 50px;
+  padding: 15px 10px;
+  margin: 20px;
+  background: #002B5D;
+  border: none;
+  border-radius: 25px;
+  color: rgb(150, 207, 207);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  box-shadow:  -2px -2px 6px 0 rgba(255, 255, 255, 0.479),
+              2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+.to-do-list button:hover{
+  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2),
+  inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+.add-task input[type=submit] {
+  min-width: 150px;
+  padding: 15px 10px;
+  margin: 20px;
+  background: #002B5D;
+  border: none;
+  border-radius: 25px;
+  color: rgb(150, 207, 207);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  box-shadow:  -2px -2px 6px 0 rgba(255, 255, 255, 0.479),
+              2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+.add-task input[type=submit]:hover{
+  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2),
+              inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+
+.add-task input[type=text] {
+  height: 30px;
+  background-color: #EBC089;
+  color: black;
+  width: 200px;
+  font-size: 20px;
+  border: solid;
+  border-image-slice: 2;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg,#41486B, #D8B696 );
+  border-radius: 15px;
+  box-shadow: inset -2px -2px 100px 1px blue;
+}
+
+.add-task input[type=text]:focus {
+  border-radius: 0px;
+  width: 300px;
+  height: 40px;
+  border: solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg, #EDC48E, blue);
+}
+
+.to-do-list input[type=submit] {
+  width: 100px;
+}
+.checkbox{
+  height: 10px;
+  width: 10px;
+}
+@media (max-width: 800px){
+  .task{
+    font-size: 15px;
+    align-content: center;
+    text-shadow: red -1.5px 0, cyan 1.5px 0;
+  }
+}
